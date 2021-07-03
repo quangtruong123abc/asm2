@@ -9,7 +9,7 @@ $conn_string = "host =$host port = 5432 dbname = $db_name user = $db_username
 password = $db_password";
 $dbconn = pg_connect($conn_string);
 
-$query =" SELECT ID, shop, name, category, amount FROM product ;"; 
+$query =" SELECT * FROM product;"; 
 $result = pg_query($dbconn, $query);
 
 ?>
