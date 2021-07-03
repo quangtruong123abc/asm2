@@ -45,6 +45,10 @@ $result = pg_query($dbconn, $query);
                     <th>Amount</th>
 
                 </tr> 
-            </head> 
+<?php 
+             display_table($result);
+    pg_close();
+             ?>
+         </head> 
             <body>
                
