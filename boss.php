@@ -37,14 +37,7 @@ $result = pg_query($dbconn, $query);
         <div class="col" style="padding-top:58px;"> 
         <table id="view-data" class="table" width="100%" cellspacing="0"> 
             <head> 
-                <tr>
-                    <th>ID</th> 
-                    <th>Shop</th> 
-                    <th>Name</th> 
-                    <th>Category</th> 
-                    <th>Amount</th>
-
-                </tr> 
+                
 <?php 
              display_table($result);
     pg_close();
